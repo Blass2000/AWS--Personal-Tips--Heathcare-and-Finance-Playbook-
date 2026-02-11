@@ -66,9 +66,10 @@ https://aws.amazon.com/glue/
 
 **10. Consumption layer –** AI/ML: This layer represents the final stage in modern data architecture, where processed data transforms into actionable insights through enterprise data warehousing solutions and advanced AI capabilities. Amazon Bedrock provides foundation models (FMs) to power generative AI applications that can analyze patterns, predict outcomes, and automate decision processes with minimal coding. Combined with traditional analytics tools, this creates a comprehensive intelligence environment—enabling high-performance analytics, interactive dashboards, self-service reporting, and sophisticated AI/ML applications while maintaining security through role-based access controls and delivering customizable visualizations that support both business users and automated systems.
 
-** 11. Consumption layer – AI/ML:** - Call me :) 
+**11. Consumption layer – AI/ML:** - Call me :) 
 
-** Consumption layer – Data collaboration** call me :)
+**Consumption layer – Data collaboration** call me :)
+
 ---
 ## **🚀 Rapid-Fire Essentials (Top 15)**
 
