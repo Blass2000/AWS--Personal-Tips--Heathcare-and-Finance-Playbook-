@@ -46,6 +46,20 @@ With modularization of Medicaid modules, as shown in the following figure, the m
 <img width="1430" height="667" alt="image" src="https://github.com/user-attachments/assets/4b068dc8-6200-4490-afee-49e300f03bcd" />
 
 **1. Data sources:** This is a database of choice for the vendor implementing a module. The approach used to build ODS should be able to accommodate a wide variety of databases.
+Quick word about security:
+CMS is deploying a seven-tiered framework, as shown in Figure 1, for managing the
+administrative, operational, and technical aspects of security and privacy of ACA systems.
+The Minimum Acceptable Risk Standards (Tier 4) are central to the framework. These
+standards are founded on:
+• Tier 1 – Federal Legislation and Executive Mandates
+• Tier 2 – HHS ACA Regulations
+• Tier 3 – Federal Regulations and Guidance
+• Tier 4 – Minimum Acceptable Risk Standards for Administering Entities
+Tiers 5, 6, and 7 are instrumental to implementing the Minimum Acceptable Risk Standard
+
+<img width="1002" height="537" alt="image" src="https://github.com/user-attachments/assets/e28a27ae-fa33-4091-976c-41103d6aff8b" />
+no kidding -here is the linl https://www.cms.gov/files/document/mars-e-v2-2-vol-1final-signed08032021-1.pdf
+
 
 **2. Data ingestion:** AWS Glue efficiently handles mainframe bulk data ingestion, and AWS Marketplace offers solutions for capturing delta changes. For relational database migration, AWS Database Migration Service (AWS DMS) provides seamless transfer capabilities. AWS DataSync facilitates smooth data movement from existing data lakes, and Amazon Simple Queue Service (Amazon SQS) enables real-time ingestion through a flexible publish-subscribe framework for streaming sources.
 https://aws.amazon.com/glue/
