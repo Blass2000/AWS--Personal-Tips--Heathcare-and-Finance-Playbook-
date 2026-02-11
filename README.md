@@ -171,25 +171,26 @@ Here are some tools and that will be needed when provisioing the right settings 
 
 ## **Notes Q\&A**
 
-### **1. How would you design a highly available EKS cluster for production workloads?**
+### **1. Design a highly available EKS cluster for production workloads**
 
 **WS:**
 I’d provision an EKS cluster across at least 3 Availability Zones for HA. Worker nodes would be in multiple subnets (private for workloads, public for ingress). I’d enable cluster autoscaler, set up managed node groups, and integrate an ALB Ingress Controller for routing. For persistence, I’d use EBS or EFS depending on workloads. Security would include network policies, RBAC, IRSA for pods, and Secrets Manager for sensitive data. Monitoring via Prometheus + Grafana, and logging via Fluent Bit to CloudWatch.
+<img width="2310" height="1540" alt="image" src="https://github.com/user-attachments/assets/b43d1f53-d6e6-4c6b-b231-667e86e655c2" />
 
 ---
 
-### **2. How do you manage secrets in your pipelines?**
+### **2. Manage secrets in your pipelines**
 
 **WS:**
 I avoid hardcoding secrets — instead, I integrate AWS Secrets Manager or SSM Parameter Store with pipelines. For Kubernetes, I use sealed-secrets or external-secrets operator to inject secrets at runtime. Access is controlled via IAM roles, ensuring least privilege. For example, in one project, we replaced all plain Kubernetes secrets with sealed-secrets encrypted via KMS, reducing exposure risks.
 
 ---
 
-### **3. If a pod in EKS is in CrashLoopBackOff, how do you troubleshoot?**
+### **3. If a pod in EKS is in CrashLoopBackOff, Troubleshoot Steps:**
 
 **WS:**
 
-1. kubectl describe pod → check events & last exit code.
+1. kubectl describe pod → check events & last exit code. (This is usually the first thing I do but oftem missed by Dev Teams)
 2. kubectl logs → review application logs.
 3. Check readiness/liveness probe configurations.
 4. Validate image pull secrets & container registry access.
