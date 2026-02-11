@@ -46,6 +46,8 @@ With modularization of Medicaid modules, as shown in the following figure, the m
 <img width="1430" height="667" alt="image" src="https://github.com/user-attachments/assets/4b068dc8-6200-4490-afee-49e300f03bcd" />
 
 **1. Data sources:** This is a database of choice for the vendor implementing a module. The approach used to build ODS should be able to accommodate a wide variety of databases.
+
+
 Quick word about security:
 CMS is deploying a seven-tiered framework, as shown in Figure 1, for managing the
 administrative, operational, and technical aspects of security and privacy of ACA systems.
