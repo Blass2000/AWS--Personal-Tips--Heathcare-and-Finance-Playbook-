@@ -1,4 +1,4 @@
-# AWS-Architect Playbook 
+# My Playbook 
 # ☁️ AWS Enterprise Solutions Architecture Portfolio
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud%20Architecture-FF9900?logo=amazon-aws)
@@ -26,6 +26,17 @@ The focus is on:
 - Disaster Recovery strategy
 - Cloud security & compliance
 - Cost optimization engineering
+
+## **🚀 Healthcare Context- MMIS specifically Comment**
+
+State Medicaid agencies have officially retired the era of the “one giant, indestructible Medicaid system” — that proud monolith that did everything… and occasionally reminded everyone of it during a three-hour outage. In its place, we now have a sleek, modular architecture. Think less battleship, more fleet of specialized vessels.
+In theory, this is progress — and it is. In practice, critical information now lives across a constellation of relational and NoSQL databases, each loyally serving its own module. The result? Data everywhere. Insight… not always.
+   
+Without a unified strategy, there’s no single source of truth — just multiple well-intentioned versions of it. Stakeholders trying to understand Medicaid operations often find themselves reconciling numbers that are technically correct, but not collectively aligned. Fragmentation introduces inefficiencies, duplicated effort, and the occasional analytical déjà vu.
+Meanwhile, agencies are navigating budget constraints and workforce shortages, all while being asked to do more with less — and do it faster. In short, Medicaid modernization has improved the architecture, but it has also raised the bar on governance, integration, and data strategy.
+Because modular systems are powerful — but only if someone is conducting the orchestra.
+The traditional Medicaid Management Information System (MMIS) is a comprehensive system responsible for claims adjudication, financial transaction processing, decision support, pharmacy benefits management, contact centers, and the storage of provider and recipient data, alongside the implementation of business rules and reference data. As these functions are deployed into individual modules, data is distributed across various database types such as Amazon Aurora, Microsoft SQL, DB2 on mainframe, PostgreSQL, and Amazon Simple Storage Service (Amazon S3). Medicaid agencies must plan to ingest data from these diverse sources to create a unified ODS. The ODS should catalog data, perform quality checks, manage master data, and use a business glossary to produce actionable insights. This post explains the architectural choices available with Amazon Web Services (AWS) to effectively create and maintain such an ODS.
+
 
 ---
 ## **🚀 Rapid-Fire Essentials (Top 15)**
